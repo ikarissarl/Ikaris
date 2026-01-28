@@ -1,144 +1,94 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IKARIS SARL</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
-    }
+# IKARIS SARL - Site Vitrine
 
-    header {
-      background-color: #1a1a1a;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
+Site vitrine professionnel pour **IKARIS SARL**, entreprise spécialisée dans la construction, l'immobilier, l'exploitation forestière et l'agro-pastoral au Cameroun.
 
-    header img {
-      height: 80px;
-      margin-bottom: 10px;
-    }
+## Aperçu
 
-    nav {
-      display: flex;
-      justify-content: center;
-      background-color: #333;
-    }
+Un site moderne et responsive présentant les services et l'expertise d'IKARIS SARL, conçu en HTML et CSS pur sans dépendances externes.
 
-    nav a {
-      color: white;
-      padding: 14px 20px;
-      text-decoration: none;
-    }
+## Structure du Projet
 
-    nav a:hover {
-      background-color: #575757;
-    }
+```
+/
+├── index.html      # Page principale
+├── styles.css      # Feuille de styles
+└── README.md       # Documentation
+```
 
-    section {
-      padding: 40px;
-      max-width: 1000px;
-      margin: auto;
-      background-color: white;
-      margin-top: 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
+## Fonctionnalités
 
-    h2 {
-      color: #1a1a1a;
-    }
+- **Design Responsive** : Adapté mobile, tablette et desktop
+- **Navigation Fluide** : Menu sticky avec smooth scroll
+- **Animations CSS** : Effets hover et transitions élégantes
+- **Formulaire de Contact** : Prêt à être connecté à un backend
+- **Performance Optimisée** : Code léger, chargement rapide
 
-    footer {
-      background-color: #1a1a1a;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
+## Sections
 
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
+| Section | Description |
+|---------|-------------|
+| Hero | Présentation principale avec call-to-action |
+| Statistiques | Chiffres clés de l'entreprise |
+| À Propos | Histoire et valeurs |
+| Services | 4 domaines d'expertise |
+| Contact | Formulaire et coordonnées |
 
-    input, textarea {
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 1em;
-    }
+## Technologies
 
-    button {
-      padding: 10px;
-      background-color: #1a1a1a;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
+- HTML5 sémantique
+- CSS3 (Flexbox, Grid, Variables CSS)
+- Google Fonts (Inter, Playfair Display)
 
-    button:hover {
-      background-color: #333;
-    }
-  </style>
-</head>
-<body>
+## Installation
 
-  <header>
-    <img src="logo1.png" alt="Logo IKARIS SARL">
-    <h1>IKARIS SARL</h1>
-    <p>Construire, exploiter, valoriser — ensemble.</p>
-  </header>
+1. Cloner le repository :
+```bash
+git clone https://github.com/votre-username/ikaris-sarl.git
+```
 
-  <nav>
-    <a href="#services">Services</a>
-    <a href="#about">À propos</a>
-    <a href="#contact">Contact</a>
-  </nav>
+2. Ouvrir `index.html` dans un navigateur
 
-  <section id="about">
-    <h2>À propos de nous</h2>
-    <p><strong>IKARIS SARL</strong> est une entreprise congolaise multidisciplinaire intervenant dans les secteurs clés du développement : construction, exploitation, immobilier et agro-pastoral. Située au cœur de Kinshasa, elle œuvre pour une transformation durable du paysage économique et social congolais. Alliant expertise locale et standards internationaux, IKARIS SARL propose des solutions novatrices, efficaces et responsables, répondant aux défis contemporains. Sa vision s’inscrit dans une démarche de progrès, de rigueur et de respect des normes, au service de ses clients et partenaires.</p>
-  </section>
+## Déploiement
 
-  <section id="services">
-    <h2>Nos Services</h2>
-    <ul>
-      <li><strong>Construction</strong> : bâtiments, infrastructures, projets publics et privés.</li>
-      <li><strong>Exploitation</strong> : gestion de ressources et projets industriels.</li>
-      <li><strong>Immobilier</strong> : promotion, gestion, location et vente de biens immobiliers.</li>
-      <li><strong>Agro-pastoral</strong> : production agricole, élevage et développement rural.</li>
-    </ul>
-  </section>
+### GitHub Pages
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p><strong>Adresse :</strong> Commune de Limete, Quartier Ndanu, Avenue Bogano n°12, Kinshasa</p>
-    <p><strong>Téléphones :</strong><br>+243 810 752 005<br>+243 874 177 811</p>
-    <p><strong>ID Légale :</strong> 01-A0103-N67207S</p>
-    <p><strong>ID Google My Business :</strong> 13526508556531546269</p>
+1. Aller dans **Settings** > **Pages**
+2. Sélectionner la branche `main` et le dossier `/ (root)`
+3. Sauvegarder
 
-    <form action="#" method="post">
-      <input type="text" name="nom" placeholder="Votre nom" required>
-      <input type="email" name="email" placeholder="Votre adresse e-mail" required>
-      <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
-      <button type="submit">Envoyer</button>
-    </form>
-  </section>
+### Netlify / Vercel
 
-  <footer>
-    <p>&copy; 2025 IKARIS SARL - Tous droits réservés</p>
-  </footer>
+Glisser-déposer le dossier du projet sur la plateforme.
 
-</body>
-</html>
-<!---
-ikarissarl/ikarissarl is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+## Personnalisation
+
+### Couleurs
+
+Modifier les variables CSS dans `styles.css` :
+
+```css
+:root {
+    --color-primary: #C9A227;
+    --color-primary-dark: #A8871F;
+    --color-dark: #1A1A1A;
+    --color-light: #FAFAFA;
+}
+```
+
+### Contenu
+
+Éditer directement le fichier `index.html` pour modifier :
+- Textes et descriptions
+- Coordonnées de contact
+- Liens de navigation
+
+## Contact
+
+**IKARIS SARL**  
+Douala, Cameroun  
+Email : contact@ikaris-sarl.com  
+Tél : +237 6XX XXX XXX
+
+## Licence
+
+Ce projet est la propriété d'IKARIS SARL. Tous droits réservés.
